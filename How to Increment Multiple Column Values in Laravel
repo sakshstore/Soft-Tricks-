@@ -1,0 +1,17 @@
+How to Increment Multiple Column Values in Laravel 9
+
+Increment Multiple Column Value Example:
+
+DB::table('traffic')->where('slug', 'install-laravel-on-ubuntu')->incrementEach([
+     'visit' => 1,
+     'cost' => 5,
+]);
+
+How to Decrement Multiple Column Values in Laravel 9
+
+Decrement Multiple Column Value Example:
+
+DB::table('traffic')->where('slug', 'install-laravel-on-ubuntu')->decrementEach([
+     'visit' => 1,
+     'cost' => 5,
+]);
