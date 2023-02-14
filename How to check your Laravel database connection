@@ -1,0 +1,11 @@
+ Here is a simple guide to check your Laravel application database connection. 3
+ 
+ 
+ <?php
+    try {
+        \DB::connection()->getPDO();
+        echo \DB::connection()->getDatabaseName();
+        } catch (\Exception $e) {
+        echo 'None';
+    }
+?>
